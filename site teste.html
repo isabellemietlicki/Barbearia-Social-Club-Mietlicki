@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Social club Mietlicki</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #111;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #333, #1a1a1a);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background-color: #222;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-top: 30px; /* Move a imagem para baixo */
+
+        }
+
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin: 20px;
+        }
+
+        .service-card p {
+            margin: 0 20px 20px;
+            font-size: 1rem;
+            color: #bbb;
+        }
+        .contact {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .contact h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #c5a31c;
+            color: #111;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: background 0.3s;
+        }
+
+        .contact a:hover {
+            background-color: #fff;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            padding: 15px;
+            text-align: center;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.8rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+        }
+        a {
+            color: #6a1b9a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .imagem-fixa1 {
+            position: fixed; /* Fixa a imagem na tela */
+            bottom: 10px; /* Distância do fundo da tela */
+            top: 15px; /*distância do topo da tela*/
+            left: 20px; /* Distância da direita da tela */
+            width: 95px; /* Largura da imagem */
+            height: auto; /* Altura automática para manter a proporção */
+            z-index: 1000; /* Garante que a imagem fique acima de outros elementos */
+        }
+    </style>
+</head>
+<body>
+    <section id="inicio">
+    <header>
+        <h1>Barbearia Social club Mietlicki</h1>
+        <p>Onde estilo e sofisticação se encontram</p>
+        <nav>
+            <a href="#inicio">Início</a>
+
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="servicos">
+        <div class="container">
+        <section class="services">
+            <div class="service-card">
+                <img src="C:\Users\Usuario\Downloads\294711118_5235718693131646_2914508323251379139_n.jpg">
+                <h3>Corte </h3>
+                <p>Estilo moderno e clássico, com técnicas de alto nível.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="C:\Users\Usuario\Downloads\Screenshot_1.png" alt="Barba Perfeita">
+                <h3>Barba</h3>
+                <p>Alinhamento, hidratação e modelagem para todos os tipos de barba.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="C:\Users\Usuario\Downloads\Screenshot_2.png" alt="Massagem Relaxante">
+                <h3>Massagem Relaxante</h3>
+                <p>Experiência relaxante com óleos essenciais.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="C:\Users\Usuario\Downloads\Screenshot_3.png" alt="Tratamento Capilar">
+                <h3>Corte Infantil</h3>
+                <p>Estilo moderno e clássico, com técnicas de alto nível</p>
+            </div>
+        </section>
+
+        <section id="contato">
+        <section class="contact">
+            <h2>Agende seu horário</h2>
+            <a href="https://wa.me/551140035398">Marque seu horario.</a>
+        </section>
+        <section class="contact">
+            <h2>Acesse nosso instagram</h2>
+            <a href="https://www.instagram.com/">Dirija-se à nossa página.</a>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 Barbearia - Todos os direitos reservados.
+    </footer>
+    
+    <img src="C:\Users\Usuario\Downloads\303597845_516380343822582_67633279712105644_n-removebg-preview.png" alt="logo Barbearia Social Club Mietlicki."  class="imagem-fixa1">
+</body>
+</html>
